@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars</title>
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <select id="cars" aria-label="Выберите тачку" disabled>
+    <option value="">Выберите тачку</option>
+  </select>
+
+  <h1 id="car-title">выбери тачку</h1>
+  <h2 id="car-price" hidden></h2>
+  <p id="error" role="alert" hidden></p>
+
+  <script id="cars-data" type="application/json">
+    {
+      "cars": [
+        {
+          "brand": "bmw",
+          "model": "M5",
+          "price": 51000
+        },
+        {
+          "brand": "volvo",
+          "model": "V90",
+          "price": 61000
+        }
+      ]
+    }
+  </script>
+</body>
+</html>
